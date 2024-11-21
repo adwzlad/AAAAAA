@@ -58,7 +58,7 @@ function clean_packages(){
 sed -i 's/root:::0:99999:7:::/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.::0:99999:7:::/g' package/base-files/files/etc/shadow
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
@@ -152,13 +152,23 @@ config_package_add luci-lib-ipkg
 #config_package_add luci-app-modemband
 ### luci-app-3ginfo-lite
 #config_package_add luci-app-3ginfo-lite
+#其它
+config_package_add luci-app-alist
+config_package_add luci-app-ddns-go
+config_package_add luci-app-eqos
+config_package_add luci-app-nfs
+config_package_add luci-app-unblockneteasemusic
+config_package_add luci-app-wireguard
+config_package_add luci-app-wol
+config_package_add luci-app-mihomo
+config_package_add luci-app-adguardhome
 
 # 镜像生成
 # 修改分区大小
 sed -i "/CONFIG_TARGET_KERNEL_PARTSIZE/d" .config
 echo "CONFIG_TARGET_KERNEL_PARTSIZE=32" >> .config
 sed -i "/CONFIG_TARGET_ROOTFS_PARTSIZE/d" .config
-echo "CONFIG_TARGET_ROOTFS_PARTSIZE=2048" >> .config
+echo "CONFIG_TARGET_ROOTFS_PARTSIZE=1024" >> .config
 # 调整 GRUB_TIMEOUT
 sed -i "s/CONFIG_GRUB_TIMEOUT=\"3\"/CONFIG_GRUB_TIMEOUT=\"1\"/" .config
 ## 不生成 EXT4 硬盘格式镜像
