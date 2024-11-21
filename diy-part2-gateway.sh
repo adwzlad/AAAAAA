@@ -58,7 +58,7 @@ function clean_packages(){
 sed -i 's/root:::0:99999:7:::/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.::0:99999:7:::/g' package/base-files/files/etc/shadow
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.1.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
@@ -163,7 +163,17 @@ config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client
 config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Rust_Server
 config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client
 config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server
-#
+#其它
+config_package_add luci-app-vlmcsd
+config_package_add luci-app-alist
+config_package_add luci-app-ddns-go
+config_package_add luci-app-eqos
+config_package_add luci-app-nfs
+config_package_add luci-app-unblockneteasemusic
+config_package_add luci-app-wireguard
+config_package_add luci-app-wol
+config_package_add luci-app-mihomo
+config_package_add luci-app-adguardhome
 
 # 镜像生成
 # 修改分区大小
