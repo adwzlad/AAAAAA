@@ -94,10 +94,10 @@ config_package_del kmod-r8168
 config_package_del kmod-tg3
 config_package_del kmod-tulip
 # Network Support
-config_package_del kmod-ppp
-config_package_del kmod-mppe
-config_package_del kmod-pppoe
-config_package_del kmod-pppox
+#config_package_del kmod-ppp
+#config_package_del kmod-mppe
+#config_package_del kmod-pppoe
+#config_package_del kmod-pppox
 # Sound Support
 config_package_del kmod-sound-core
 config_package_del kmod-ac97
@@ -163,6 +163,7 @@ config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client
 config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Rust_Server
 config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client
 config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server
+#
 
 # 镜像生成
 # 修改分区大小
