@@ -161,7 +161,7 @@ config_package_add luci-app-unblockneteasemusic
 config_package_add luci-app-wireguard
 config_package_add luci-app-wol
 config_package_add luci-app-mihomo
-config_package_add luci-app-adguardhome
+#config_package_add luci-app-adguardhome
 
 # 镜像生成
 # 修改分区大小
