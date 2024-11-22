@@ -153,10 +153,10 @@ config_package_add luci-lib-ipkg
 ### luci-app-3ginfo-lite
 #config_package_add luci-app-3ginfo-lite
 #其它
-config_package_add luci-app-alist
+#config_package_add luci-app-alist
 config_package_add luci-app-ddns-go
 config_package_add luci-app-eqos
-config_package_add luci-app-nfs
+#config_package_add luci-app-nfs
 config_package_add luci-app-unblockneteasemusic
 config_package_add luci-app-wireguard
 config_package_add luci-app-wol
