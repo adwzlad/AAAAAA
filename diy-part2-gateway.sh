@@ -165,15 +165,15 @@ config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client
 config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server
 #其它
 config_package_add luci-app-vlmcsd
-config_package_add luci-app-alist
+#config_package_add luci-app-alist
 config_package_add luci-app-ddns-go
 config_package_add luci-app-eqos
-config_package_add luci-app-nfs
+#config_package_add luci-app-nfs
 config_package_add luci-app-unblockneteasemusic
 config_package_add luci-app-wireguard
 config_package_add luci-app-wol
 config_package_add luci-app-mihomo
-config_package_add luci-app-adguardhome
+#config_package_add luci-app-adguardhome
 
 # 镜像生成
 # 修改分区大小
