@@ -128,15 +128,15 @@ mv package/custom/golang feeds/packages/lang/
 # argon 主题
 config_package_add luci-theme-argon
 ## passwall
-config_package_add luci-app-passwall
-config_package_add luci-app-passwall_Nftables_Transparent_Proxy
-config_package_del luci-app-passwall_Iptables_Transparent_Proxy
-config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client
-config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server
-config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client
-config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Rust_Server
-config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client
-config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server
+#config_package_add luci-app-passwall
+#config_package_add luci-app-passwall_Nftables_Transparent_Proxy
+#config_package_del luci-app-passwall_Iptables_Transparent_Proxy
+#config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client
+#config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server
+#config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client
+#config_package_del luci-app-passwall_INCLUDE_Shadowsocks_Rust_Server
+#config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client
+#config_package_del luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server
 ## 定时任务。重启、关机、重启网络、释放内存、系统清理、网络共享、关闭网络、自动检测断网重连、MWAN3负载均衡检测重连、自定义脚本等10多个功能
 config_package_add luci-app-autotimeset
 config_package_add luci-lib-ipkg
@@ -160,8 +160,9 @@ config_package_add luci-app-eqos
 config_package_add luci-app-unblockneteasemusic
 config_package_add luci-app-wireguard
 config_package_add luci-app-wol
-config_package_add luci-app-mihomo
+#config_package_add luci-app-mihomo
 #config_package_add luci-app-adguardhome
+config_package_add luci-app-homeproxy
 
 # 镜像生成
 # 修改分区大小
