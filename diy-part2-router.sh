@@ -158,7 +158,7 @@ config_package_add luci-app-ddns-go
 config_package_add luci-app-eqos
 #config_package_add luci-app-nfs
 config_package_add luci-app-unblockneteasemusic
-config_package_add luci-app-wireguard
+#config_package_add luci-app-wireguard
 config_package_add luci-app-wol
 #config_package_add luci-app-mihomo
 #config_package_add luci-app-adguardhome
